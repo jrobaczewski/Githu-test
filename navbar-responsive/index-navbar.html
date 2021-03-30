@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>navbar</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/63e5d4804f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (min-width:576px)" href="css/small.css">
+    <link rel="stylesheet" media="screen and (min-width:768px)" href="css/medium.css">
+    <link rel="stylesheet" media="screen and (min-width:992px)" href="css/large.css">
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fas fa-home" aria-hidden="true"></i></span>
+                    <span class="title">home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fas fa-home" aria-hidden="true"></i></span>
+                    <span class="title">menu1</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fas fa-home" aria-hidden="true"></i></span>
+                    <span class="title">menu2</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fas fa-home" aria-hidden="true"></i></span>
+                    <span class="title">menu3</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fas fa-home" aria-hidden="true"></i></span>
+                    <span class="title">menu4</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fas fa-home" aria-hidden="true"></i></span>
+                    <span class="title">menu5</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fas fa-home" aria-hidden="true"></i></i></span>
+                    <span class="title">menu6</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fas fa-home" aria-hidden="true"></i></span>
+                    <span class="title">menu7</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="toggle" onclick="toggleMenu()"></div>
+    <script type="text/javascript">
+        function toggleMenu(){
+            let navigation = document.querySelector('.navigation')
+            let toggle = document.querySelector('.toggle')
+            navigation.classList.toggle('active');
+            toggle.classList.toggle('active');
+        }
+</script>
+</body>
+</html>
